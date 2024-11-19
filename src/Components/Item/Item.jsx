@@ -15,8 +15,8 @@ export default function Item() {
     return (
         <div className='item-container'>
             <h2>{item.name}</h2>
-            <img src={item.url}></img>
-            <button onClick={handleItem}>Change Item</button>
+            <a href={item.shop} target='_blank'><img src={item.url}></img></a>
+            <button onClick={handleItem}>New Item</button>
         </div>
     );
 };

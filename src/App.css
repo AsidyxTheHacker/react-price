@@ -3,17 +3,22 @@
   box-sizing: border-box;
 }
 
-#root {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
 body {
   background-image: url('../src/assets/background.png');
   height: 100vh;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }

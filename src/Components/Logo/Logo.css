@@ -1,0 +1,4 @@
+.logo {
+    max-height: calc(6vw + 36px);
+    align-self: baseline;
+}

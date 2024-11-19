@@ -1,11 +1,15 @@
 import './App.css'
 import Item from './Components/Item/Item';
+import Logo from './Components/Logo/Logo';
 
 function App() {
 
   return (
     <>
-      <Item />
+      <div className="container">
+        <Logo />
+        <Item />
+      </div>
     </>
   );
 };

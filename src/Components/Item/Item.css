@@ -3,19 +3,36 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: calc(3vh + 5px);
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .item-container img {
-    border: rgb(119, 119, 119) solid 3px;
-    max-height: calc(25vw + 150px);
+    border: white solid 3px;
+    max-height: calc(20vw + 150px);
+    min-height: calc(20vw + 150px);
     box-shadow: rgba(0, 0, 0, 0.484) 0 0 32px;
+    transition: .15s ease-in-out;
+}
+
+.item-container img:hover {
+    border: goldenrod solid 3px;
 }
 
 .item-container h2 {
-
+    cursor: default;
+    color: white;
+    font-size: calc(2vw + 18px);
+    letter-spacing: calc(.1vw + 2px);
+    text-shadow: rgba(0, 0, 0, 0.75) 0 3px 0;
+    border-bottom: white solid 3px;
+    margin-bottom: calc(1vh + 2px);
 }
 
 .item-container button {
-    
+    margin-top: calc(2vh + 5px);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: calc(2vh + 8px);
+    border-radius: 20px;
+    outline: none;
 }
