@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  background-image: url('../src/assets/background.png');
+  height: auto;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
