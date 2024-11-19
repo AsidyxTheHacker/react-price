@@ -1,0 +1,21 @@
+.item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: calc(3vh + 5px);
+}
+
+.item-container img {
+    border: rgb(119, 119, 119) solid 3px;
+    max-height: calc(25vw + 150px);
+    box-shadow: rgba(0, 0, 0, 0.484) 0 0 32px;
+}
+
+.item-container h2 {
+
+}
+
+.item-container button {
+    
+}

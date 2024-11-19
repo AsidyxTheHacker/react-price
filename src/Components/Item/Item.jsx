@@ -1,13 +1,22 @@
 import { useState } from 'react';
-import './Item.css'
+import './Item.css';
+import data from '../../assets/data.json';
 
-export  default function Item() {
+export default function Item() {
 
-    const [item, setItem] = useState('');
+    let randomNum = Math.floor(Math.random() * data.length);
+    const [item, setItem] = useState(data[Math.floor(Math.random() * data.length)]);
 
-  return (
-    <div className='item-container'>
-      <img src={item}></img>
-    </div>
-  );
+    const handleItem = () => {
+        randomNum = Math.floor(Math.random() * data.length);
+        setItem(data[randomNum]);
+    };
+
+    return (
+        <div className='item-container'>
+            <h2>{item.name}</h2>
+            <img src={item.url}></img>
+            <button onClick={handleItem}>Change Item</button>
+        </div>
+    );
 };
