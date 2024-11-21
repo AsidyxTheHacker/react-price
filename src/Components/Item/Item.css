@@ -1,38 +1,87 @@
 .item-container {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     font-family: "Bebas Neue", sans-serif;
-}
-
-.item-container img {
-    border: white solid 3px;
-    max-height: calc(20vw + 150px);
-    min-height: calc(20vw + 150px);
-    box-shadow: rgba(0, 0, 0, 0.484) 0 0 32px;
-    transition: .15s ease-in-out;
-}
-
-.item-container img:hover {
-    border: goldenrod solid 3px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.577) 0 0 32px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: calc(.2vw + 16px);
+    min-width: calc(32% + 20px);
 }
 
 .item-container h2 {
     cursor: default;
-    color: white;
-    font-size: calc(2vw + 18px);
-    letter-spacing: calc(.1vw + 2px);
-    text-shadow: rgba(0, 0, 0, 0.75) 0 3px 0;
-    border-bottom: white solid 3px;
-    margin-bottom: calc(1vh + 2px);
+    color: rgb(51, 51, 51);
+    text-align: center;
+    font-size: calc(2vw + 16px);
+    letter-spacing: calc(.05vw + 1px);
 }
 
-.item-container button {
-    margin-top: calc(2vh + 5px);
-    cursor: pointer;
-    font-weight: bold;
-    font-size: calc(2vh + 8px);
-    border-radius: 20px;
-    outline: none;
+.data-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
+
+.data-container .item-photo {
+    min-height: calc(30vh + 60px);
+    border-bottom: gold solid 4px;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.info-container .next-button {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    height: calc(5vh + 8px);
+    transition: .15s ease-in-out;
+}
+
+.info-container .next-button:hover {
+    background-color: gold;
+}
+
+.info-container .price-text {
+    font-size: calc(3vh + 8px);
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+    transition: .15s ease-in-out;
+}
+
+.info-container .price-text:hover {
+    color: gold;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.next-text {
+    color: rgb(179, 179, 179);
+    transition: .15s ease-in-out;
+    font-size: calc(2vh + 8px);
+    cursor: default;
+    font-style: italic;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@media (max-width: 375px) {
+    .data-container {
+        flex-direction: column;
+    }
+} 
