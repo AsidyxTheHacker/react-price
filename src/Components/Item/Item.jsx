@@ -6,6 +6,7 @@ import arrow_icon from '../../assets/arrow-icon.svg'
 export default function Item() {
     const priceTextRef = useRef(null);
     const nextTextRef = useRef(null);
+    const descTextRef = useRef(null);
 
     const [item, setItem] = useState(data[Math.floor(Math.random() * data.length)]);
 
@@ -15,12 +16,14 @@ export default function Item() {
 
         if (priceTextRef.current) {
             priceTextRef.current.innerText = "$$$";
+            priceTextRef.current.classList.remove('animate__tada');
         };
     };
 
     const handlePrice = () => {
         if (priceTextRef.current) {
             priceTextRef.current.innerText = `$${item.price}`;
+            priceTextRef.current.classList.add('animate__tada');
         };
     };
 
@@ -59,10 +62,14 @@ export default function Item() {
                         >Next...</p>
                     </div>
                     <p
-                        className='price-text'
+                        className='animate__animated price-text'
                         onClick={handlePrice}
                         ref={priceTextRef}
                     >$$$</p>
+                    <p
+                        className='desc-text'
+                        ref={descTextRef}
+                    >{item.desc}</p>
                 </div>
             </div>
         </div>

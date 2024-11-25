@@ -2,20 +2,22 @@
     {
         "name": "RARE PATRICK STAR CERAMIC",
         "price": "300",
-        "desc": ""
+        "desc": "perfect for scaring children into behaving, attracting thousands of admirers, and/or displaying in your fancy china cabinet. the possibilities are endless!"
     },
     {
         "name": "authentic 2006 cheese stick RARE",
         "price": "6,000",
-        "desc": ""
+        "desc": "this stick of cheese is among oen of my prized possessons and will only part with it for a high bidder"
     },
     {
         "name": "Big foot I need a new home",
-        "price": "350"
+        "price": "350",
+        "desc": "Used big I've been in the woods one to many times"
     },
     {
-        "name": "President Donald Trump Hot Sauce",
-        "price": "15"
+        "name": "Banana with Tape. Master work of art",
+        "price": "500,000",
+        "desc": "Banana taped to paper.  This piece makes a very strong statement about inflation.  One just sold at one of the worlds premier auction houses for 6 million, so at 500K, this is a steal."
     },
     {
         "name": "A original oil painting of The WolfMan",
@@ -23,10 +25,42 @@
     },
     {
         "name": "Donald Trump Halloween Statue",
-        "price": "300"
+        "price": "300",
+        "desc": "Life-size Trump Halloween Statue. Great yard decor or for in front your business. $300 obo"
     },
     {
-        "name": "",
-        "price": ""
+        "name": "Popeyes Rare chicken tender shaped like a 3",
+        "price": "999",
+        "desc": "New never been used...or eaten. Brand new chicken tender that's shaped like a 3. Very rare. Very crispy"
+    },
+    {
+        "name": "DaBaby ashtray",
+        "price": "120",
+        "desc": "It is brand new"
+    },
+    {
+        "name": "Joe Rogan 55lb Kettlebell - Limited Edition",
+        "price": "500",
+        "desc": "Limited edition Joe Rogan Kettlebell - needed to be selected by lottery for a chance to be able to buy one."
+    },
+    {
+        "name": "Tank chair",
+        "price": "7,500",
+        "desc": "Ready to roll tank chair with newer batteries and onboard charger! Will trade for things of interest and equal value or sell."
+    },
+    {
+        "name": "Porcelain Jesus Doll",
+        "price": "45",
+        "desc": "Ashton drake Jesus Doll. 'Let the little children come to me'"
+    },
+    {
+        "name": "NYT 9-12-2001 Newspaper",
+        "price": "40",
+        "desc": "Original complete New York Times September 12, 2001 edition in great shape."
+    },
+    {
+        "name": "Skibidi Toilet Halloween Costume!",
+        "price": "20",
+        "desc": "Get a jump on next year with this hilarious costume or use it for any dress up parties before then!"
     }
 ]
