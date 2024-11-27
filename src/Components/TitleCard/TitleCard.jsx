@@ -5,7 +5,7 @@ export default function TitleCard() {
 
     setInterval(() => {
         document.querySelector('.title-card').style.display = 'none';
-    }, 2000);
+    }, 3000);
 
     return (
         <div className='title-card'>
