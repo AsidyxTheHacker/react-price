@@ -1,9 +1,10 @@
 import { useState, useRef } from 'react';
 import './Item.css';
 import data from '../../assets/data.json';
-import arrow_icon from '../../assets/arrow-icon.svg'
+import arrow_icon from '../../assets/arrow-icon.svg';
 
 export default function Item() {
+    const priceSfx = document.querySelector('.price-audio');
     const priceTextRef = useRef(null);
     const nextTextRef = useRef(null);
     const descTextRef = useRef(null);
@@ -13,17 +14,23 @@ export default function Item() {
     const handleItem = () => {
         const randomNum = Math.floor(Math.random() * data.length);
         setItem(data[randomNum]);
+        priceSfx.currentTime = 4;
 
         if (priceTextRef.current) {
             priceTextRef.current.innerText = "$$$";
             priceTextRef.current.classList.remove('animate__tada');
+            document.querySelector('.button-container').style.zIndex = '-1';
         };
     };
 
     const handlePrice = () => {
         if (priceTextRef.current) {
+            if(priceTextRef.current.innerText === "$$$") {
+                priceSfx.play();
+            };
             priceTextRef.current.innerText = `$${item.price}`;
             priceTextRef.current.classList.add('animate__tada');
+            document.querySelector('.button-container').style.zIndex = '1';
         };
     };
 

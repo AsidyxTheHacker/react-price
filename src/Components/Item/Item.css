@@ -23,9 +23,6 @@
 .data-container {
     display: grid;
     grid-template-columns: 1fr 32em;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
     width: 100%;
 }
 
@@ -33,6 +30,7 @@
     min-height: calc(30vh + 60px);
     border-bottom: gold solid 4px;
     margin-bottom: .5em;
+    justify-self: center;
     box-shadow: rgba(0, 0, 0, 0.488) 0 2px 10px;
 }
 
@@ -41,7 +39,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    gap: .5em;
+    gap: 1em;
 }
 
 .info-container .next-button {
@@ -76,6 +74,7 @@
     display: flex;
     align-items: center;
     gap: .5em;
+    z-index: -1;
 }
 
 .next-text {

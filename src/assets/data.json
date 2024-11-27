@@ -21,7 +21,8 @@
     },
     {
         "name": "A original oil painting of The WolfMan",
-        "price": "29"
+        "price": "29",
+        "desc": "A very realistic oil painting I made of the famous wolf man. Cash only no scams!!"
     },
     {
         "name": "Donald Trump Halloween Statue",
@@ -29,7 +30,7 @@
         "desc": "Life-size Trump Halloween Statue. Great yard decor or for in front your business. $300 obo"
     },
     {
-        "name": "Popeyes Rare chicken tender shaped like a 3",
+        "name": "Popeyes chicken tender shaped like a 3",
         "price": "999",
         "desc": "New never been used...or eaten. Brand new chicken tender that's shaped like a 3. Very rare. Very crispy"
     },
@@ -62,5 +63,70 @@
         "name": "Skibidi Toilet Halloween Costume!",
         "price": "20",
         "desc": "Get a jump on next year with this hilarious costume or use it for any dress up parties before then!"
+    },
+    {
+        "name": "Stone Cold Steve Austin bowling ball",
+        "price": "150",
+        "desc": "Super rare stone cold Steve Austin bowling ball. CASH ONLY!"
+    },
+    {
+        "name": "32” male virgin hair",
+        "price": "200",
+        "desc": "32” hispanic male virgin hair Naturally wavy, was cut about 4 years ago."
+    },
+    {
+        "name": "Zoom calls with Santa",
+        "price": "20",
+        "desc": "15 minute zoom call with jolly ol Santa"
+    },
+    {
+        "name": "Movie",
+        "price": "10",
+        "desc": "You thought star wars was good just wait for the best crossover known to man!! If this movie dont do it for you nothing will! Not even your wife!"
+    },
+    {
+        "name": "Xbox One with my son",
+        "price": "100",
+        "desc": "Unfortunately, my ex-wife left her stupid son with me and hes been hogging my xbox. Anyone is welcome to take him for free but I dont think he will leave without the Xbox."
+    },
+    {
+        "name": "Sigma cat",
+        "price": "15",
+        "desc": "Fine classical artwork that shows the real side of this brain rot world photo includes mickey ultra and a geek bar"
+    },
+    {
+        "name": "3 d printed Biden poop",
+        "price": "10",
+        "desc": "3-D printed Biden poop any color, price goes up with the size"
+    },
+    {
+        "name": "Star Wars episode 1 Lifesize Jar Jar Binks",
+        "price": "2,000",
+        "desc": "I had this lifesize figure for a while just decided to get rid of it hopefully a Star Wars fan will enjoy it for their collection (Jar Jar only has one defected on the arm so I’m also Negotiable)"
+    },
+    {
+        "name": "Magic beans",
+        "price": "5,000",
+        "desc": "Look no further, these magic beans can get you to your wildest dreams, I would trade for a magic lamp or a flying carpet, these beans will not grow until mid April so I’m in no rush to sell"
+    },
+    {
+        "name": "Tupac pit bull painting",
+        "price": "10",
+        "desc": "10.75' x 13.75'"
+    },
+    {
+        "name": "rat fink",
+        "price": "50",
+        "desc": "13 inch resin ratfink BUY NOW"
+    },
+    {
+        "name": "Tufted Prison Rick Rug",
+        "price": "120",
+        "desc": "Transform your space with our Tufted Rick Rug! Featuring the iconic character from 'Rick and Morty,' this playful rug adds a fun and vibrant touch. This rug enhances your decor and serves as a conversation starter for fellow fans."
+    },
+    {
+        "name": "Garfield Buddha Figurine",
+        "price": "8",
+        "desc": "4 inch Petg plastic material solid"
     }
 ]
