@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Dropdown from '../Dropdown/Dropdown';
 import './Logo.css';
 
-export default function Logo({ parentProduct, handleItem }) {
+export default function Logo({ parentProduct }) {
     const [getProduct, setGetProduct] = useState(null);
 
     const handleProduct = (item) => {
@@ -10,11 +10,10 @@ export default function Logo({ parentProduct, handleItem }) {
     };
 
     useEffect(() => {
-        parentProduct(getProduct);
-        if (handleItem) {
-            handleItem();  // Ensure the function runs when getProduct changes
+        if (getProduct) {
+            parentProduct(getProduct);
         }
-    }, [getProduct, parentProduct, handleItem]);
+    }, [getProduct, parentProduct]);
 
     return (
         <div className='logo-container'>
@@ -23,7 +22,7 @@ export default function Logo({ parentProduct, handleItem }) {
                 src="../../src/assets/logo.png"
                 alt="Logo"
             />
-            <Dropdown sendProduct={handleProduct} handleItem={handleItem} />
+            <Dropdown sendProduct={handleProduct} />
         </div>
     );
 };

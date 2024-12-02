@@ -6,15 +6,9 @@ import TitleCard from './Components/TitleCard/TitleCard';
 
 function App() {
   const [getParentProduct, setGetParentProduct] = useState(null);
-  const [handleItem, setHandleItem] = useState(null);
 
   const handleParentProduct = (item) => {
     setGetParentProduct(item);
-  };
-
-  const handleItemFunction = () => {
-    console.log("handleItem function was triggered");
-    // You can replace this with any logic you want to test
   };
 
   return (
@@ -22,11 +16,10 @@ function App() {
       <TitleCard />
       <Logo
         parentProduct={handleParentProduct}
-        handleItem={handleItemFunction}  // Pass your function here
       />
-      <Item getParentProduct={getParentProduct} setHandleItem={setHandleItem} />
+      <Item getParentProduct={getParentProduct} />
     </div>
   );
-}
+};
 
 export default App;

@@ -3,7 +3,7 @@ import './Item.css';
 import data from '../../assets/data.json';
 import arrow_icon from '../../assets/arrow-icon.svg';
 
-export default function Item({ getParentProduct, setHandleItem }) {
+export default function Item({ getParentProduct }) {
     const priceSfxRef = useRef(null);
     const priceTextRef = useRef(null);
     const nextTextRef = useRef(null);
@@ -19,26 +19,22 @@ export default function Item({ getParentProduct, setHandleItem }) {
     }, [getParentProduct]);
 
     const handleItem = () => {
-        const randomNum = Math.floor(Math.random() * data.length);
-        setItem(data[randomNum]);
+    const randomNum = Math.floor(Math.random() * data.length);
+    setItem(data[randomNum]);
 
-        if (priceSfxRef.current) {
-            priceSfxRef.current.currentTime = 4;
-        };
-
-        if (priceTextRef.current) {
-            priceTextRef.current.innerText = "$$$";
-            priceTextRef.current.classList.remove('animate__tada');
-        };
-
-        if (buttonContainerRef.current) {
-            buttonContainerRef.current.style.zIndex = '-1';
-        };
+    if (priceSfxRef.current) {
+        priceSfxRef.current.currentTime = 4;
     };
 
-    useEffect(() => {
-        setHandleItem(() => handleItem);
-    }, [setHandleItem]);
+    if (priceTextRef.current) {
+        priceTextRef.current.innerText = "$$$";
+        priceTextRef.current.classList.remove('animate__tada');
+    };
+
+    if (buttonContainerRef.current) {
+        buttonContainerRef.current.style.zIndex = '-1';
+    };
+};
 
     const handlePrice = () => {
         if (priceTextRef.current) {

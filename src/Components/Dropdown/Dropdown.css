@@ -3,6 +3,7 @@
     height: calc(10% + 20px);
     border-radius: 12px 12px 0 0;
     cursor: pointer;
+    padding-left: 1em;
     background-color: rgba(0, 0, 0, 0.628);
     border: none;
 }
