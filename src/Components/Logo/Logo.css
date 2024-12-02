@@ -2,3 +2,15 @@
     max-height: calc(6vw + 40px);
     align-self: baseline;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .logo-container {
+        justify-content: space-evenly;
+    }
+} 

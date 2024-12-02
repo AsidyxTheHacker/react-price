@@ -1,0 +1,17 @@
+#dropdown {
+    color: white;
+    height: calc(10% + 20px);
+    border-radius: 12px 12px 0 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.628);
+    border: none;
+}
+
+option {
+    background-color: rgba(0, 0, 7, 0.805);
+    font-style: italic;
+}
+
+#dropdown:focus {
+    outline: none;
+}
